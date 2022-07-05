@@ -78,10 +78,7 @@ Highcharts.setOptions({
 const foptions = {
     method: 'GET', 
     headers: {
-        'mode': 'cors',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS'
     }, 
 }
 
@@ -722,7 +719,7 @@ class Chart extends React.Component {
 
         fetchAPI(){
             let baseUrl = "https://api.cryptowat.ch/markets/" + this.state.exchange + "/" + this.state.pair + "/ohlc"
-            let proxyUrl = ""//https://thingproxy.freeboard.io/fetch/
+            let proxyUrl = "https://thingproxy.freeboard.io/fetch/"
 
             fetch((proxyUrl + baseUrl), foptions)
             .then(response => response.json())
