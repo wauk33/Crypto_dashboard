@@ -1,0 +1,79 @@
+@import "reset.sass"
+
+body
+
+
+.wrapper
+    width: 100%
+    height: 100vh
+
+    background-image: url("/public/bgimg.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+
+    display: flex
+    justify-content: center
+    align-items: center
+.main
+    width: 400px
+    position: absolute
+
+    box-shadow: 0px 0px 20px 5px #2376f1
+    border-radius: 50px
+    border: 5px solid #23b7f1da
+    background-color: #fff
+    animation: glow 3s infinite linear
+    transition: height 1s, width 1s
+    overflow: hidden
+    @keyframes glow
+        0%
+            box-shadow: 0px 0px 10px 5px #2376f1
+            border: 5px solid #23b7f1da
+        50%
+            box-shadow: 0px 0px 50px 2px #2364f1
+            border: 5px solid #a556ff5e
+        100%
+            box-shadow: 0px 0px 10px 5px #2376f1
+            border: 5px solid #23b7f1da
+
+    .logo-container
+        margin-top: 30px
+        height: 150px
+        display: flex
+        justify-content: center
+        align-items: center
+        .logo
+            height: 120px
+            background-image: url('/public/preloading-icon4.gif')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            animation: headShake
+            animation-duration: 1s
+            animation-delay: 0.8s
+    .head
+        z-index: 1
+        margin-top: 20px
+        visiblity: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        Button
+            margin-left: 10px
+            height: 55px
+            width: 95px
+
+.portal-container
+    width: 50%
+    height: 100vh
+    background-color: #04020c
+    .portal
+        width: 100%
+        height: 100%
+
+        background-image: url('/public/portal.gif')
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        box-shadow: 0px 0px 45px 55px #04020c
+

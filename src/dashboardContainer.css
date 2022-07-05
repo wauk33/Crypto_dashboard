@@ -1,0 +1,355 @@
+a {
+  text-decoration: none;
+}
+
+.dashboard-container {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100% fontsizele;
+  display: none;
+}
+
+.timeline {
+  position: relative;
+  box-shadow: 0px 0px 10px 1px rgba(107, 107, 107, 0.3411764706);
+  background-color: #2376f1;
+  width: 9px;
+  height: 3000px;
+  margin-left: 3%;
+  top: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px #bbbaba solid;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.timeline .point {
+  background-attachment: fixed;
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+  background-color: rgba(21, 239, 255, 0.7725490196);
+  box-shadow: 0px 0px 5px 1px #15efff;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+}
+.timeline .point p {
+  text-shadow: 0px 0px 1px rgba(92, 92, 92, 0.5607843137);
+  font-size: 18px;
+  margin-left: 2.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard {
+  width: 100%;
+}
+
+.dashboard-box {
+  height: 10000px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "Oxygen", sans-serif;
+}
+.dashboard-box .welcome-header {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  width: 30%;
+  height: 60px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.dashboard-box .welcome-header p {
+  font-size: 40px;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+.dashboard-box .home {
+  margin-top: 1%;
+  width: 80%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-box .headline {
+  margin-top: 13%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.dashboard-box .headline p {
+  color: #2376f1;
+  font-family: "Saira", sans-serif;
+}
+.dashboard-box .refresh-container {
+  width: 75%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1%;
+}
+.dashboard-box .refresh-container .refresh-buttons {
+  margin-right: -4.2%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-box .refresh-container .refresh-buttons .button-re {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgba(161, 161, 161, 0.2392156863) solid;
+  width: 50%;
+  height: 50px;
+  margin-right: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.dashboard-box .refresh-container .refresh-buttons .button-re:hover {
+  background-color: #226ddd;
+}
+.dashboard-box .refresh-container .refresh-buttons .button-re:nth-child(1) {
+  color: #2376f1;
+}
+.dashboard-box .refresh-container .refresh-buttons .button-re:nth-child(1):hover {
+  color: white;
+}
+.dashboard-box .refresh-container .refresh-buttons .button-re-auto {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px rgba(161, 161, 161, 0.2392156863) solid;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.dashboard-box .refresh-container .refresh-buttons .button-re-auto p {
+  margin-top: -2px;
+  margin-left: 7px;
+  margin-right: 2px;
+  font-family: "Inter", sans-serif;
+}
+.dashboard-box .search-field {
+  box-shadow: 0px 6px 6px -6px rgba(35, 117, 241, 0.6901960784);
+  margin-top: 20px;
+  width: 70%;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.dashboard-box .nft-header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 85%;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.dashboard-box .nft-header-container .nft-header {
+  background-color: #ffffff;
+  font-size: 18px;
+  border-radius: 15px 15px 0px 0px;
+  border: 1px rgba(161, 161, 161, 0.2392156863) solid;
+  border-bottom: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  align-self: center;
+  text-align: center;
+  width: 15.5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-box .nft-header-container .nft-header p {
+  margin-top: -30px;
+}
+.dashboard-box .nft-header-container .trending {
+  background-image: url("../public/fire5.gif");
+  background-size: 20% 120%;
+  background-repeat: no-repeat;
+  background-position: 95% 55%;
+  -webkit-animation: hue linear infinite;
+          animation: hue linear infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@-webkit-keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  to {
+    filter: hue-rotate(0deg);
+  }
+}
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  to {
+    filter: hue-rotate(0deg);
+  }
+}
+.dashboard-box .nft-container {
+  margin-top: -70px;
+  width: 85%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.dashboard-box .nft-container .nft {
+  align-self: center;
+  width: 15.5%;
+  height: 85%;
+  box-shadow: 0px 8px 6px -6px #2376f1;
+  border-bottom: 1px rgba(161, 161, 161, 0.2392156863) solid;
+  border-left: 1px rgba(161, 161, 161, 0.2392156863) solid;
+  border-right: 1px rgba(161, 161, 161, 0.2392156863) solid;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column;
+  font-family: "Oxygen", sans-serif;
+}
+.dashboard-box .nft-container .nft .nft-image {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: hover ease-in-out infinite;
+          animation: hover ease-in-out infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  transition: 0.15s linear;
+}
+@-webkit-keyframes hover {
+  from {
+    transfrom: translateY(0%);
+  }
+  50% {
+    transform: translateY(1.5%);
+  }
+  to {
+    transfrom: translateY(0%);
+  }
+}
+@keyframes hover {
+  from {
+    transfrom: translateY(0%);
+  }
+  50% {
+    transform: translateY(1.5%);
+  }
+  to {
+    transfrom: translateY(0%);
+  }
+}
+.dashboard-box .nft-container .nft .nft-image img {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.7s;
+}
+.dashboard-box .nft-container .nft .nft-image:hover {
+  border-radius: 15px;
+  height: 120%;
+  width: 105%;
+}
+.dashboard-box .nft-container .nft-collection {
+  border-top: 1px solid rgba(161, 161, 161, 0.2392156863);
+  text-align: left;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  padding-left: 6%;
+  padding-top: 6%;
+  margin-bottom: -2%;
+}
+.dashboard-box .nft-container .nft-collection a {
+  color: rgba(25, 118, 210, 0.9529411765);
+}
+.dashboard-box .nft-container .nft-info {
+  align-self: center;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-box .nft-container .nft-info .nft-name {
+  font-size: 16px;
+  width: 80%;
+}
+.dashboard-box .nft-container .nft-info .nft-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dashboard-box .nft-container .nft-info .nft-price p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+.dashboard-box .nft-container .nft-info .nft-price .etherIcon {
+  margin-right: 13%;
+  width: 22%;
+  height: 22%;
+}
+.dashboard-box .nft-container .nft-info .nft-price .solanaIcon {
+  margin-right: 13%;
+  width: 33%;
+  height: 33%;
+}
+.dashboard-box .openSeaButton {
+  align-self: center;
+  width: 40%;
+  margin-bottom: 10px;
+  font-family: "Oxygen", sans-serif;
+}
+.dashboard-box .openSeaButton a {
+  color: white;
+}/*# sourceMappingURL=dashboardContainer.css.map */

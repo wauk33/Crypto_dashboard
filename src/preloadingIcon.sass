@@ -1,0 +1,43 @@
+.preloading-container
+    display: none
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    height: 100%
+    .preloading-icon
+        width: 50%
+        height: 150px
+        background-image: url(/public/ether.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        animation: flip2 2s infinite
+        @keyframes flip2
+            0%
+                transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg)
+                animation-timing-function: ease-out
+            16% 
+                opacity: 100
+                transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 100px) rotate3d(0, 1, 0, -190deg)
+                animation-timing-function: ease-out 
+            20% 
+                transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 100px) rotate3d(0, 1, 0, -170deg)
+                animation-timing-function: ease-in-out
+            40% 
+                transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)
+                animation-timing-function: ease-in
+            100%
+                transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)
+                animation-timing-function: ease-in
+    .preloading-text
+        margin-top: 5%
+        text-align: center
+        font-size: 18px
+        font-family: 'Oxygen', sans-serif
+        color: black
+        clip-path: inset(0 1.2ch 0 0)
+        animation: l 1s steps(60) infinite
+        @keyframes l
+            to 
+                clip-path: inset(0 -1ch 0 0)
+        

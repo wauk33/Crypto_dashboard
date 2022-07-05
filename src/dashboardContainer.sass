@@ -1,0 +1,263 @@
+
+    
+a
+    text-decoration: none  
+.dashboard-container
+    overflow-y: scroll
+    height: 100%
+    width: 100%fontsizele
+    display: none
+.timeline
+    position: relative
+    box-shadow: 0px 0px 10px 1px #6b6b6b57
+    background-color: #2376f1
+    width: 9px
+    height: 3000px
+    margin-left: 3%
+    top: 60%
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-between
+    align-items: center
+    border-radius: 10px
+    border: 1px #bbbaba solid
+    animation-duration: 1.5s
+    user-select: none
+    .point
+        background-attachment: fixed
+        width: 25px
+        border-radius: 50%
+        height: 25px
+        background-color: #15efffc5
+        box-shadow: 0px 0px 5px 1px #15efff
+        transition: 1s
+        display: flex
+        align-items: center
+        p
+            text-shadow: 0px 0px 1px #5c5c5c8f
+            font-size: 18px
+            margin-left: 2.5rem
+            font-family: 'Inter', sans-serif
+
+.dashboard
+    width: 100%
+.dashboard-box
+    height: 10000px
+    width: 100%
+    display: flex
+    flex-flow: column
+    align-items: center
+    font-family: 'Oxygen', sans-serif
+    .welcome-header
+        text-align: center
+        margin-top: 4%
+        margin-bottom: 1%
+        width: 30%
+        height: 60px
+        user-select: none
+        p
+            font-size: 40px
+            animation-duration: 1.3s
+    .home
+        margin-top: 1%
+        width: 80%
+        height: 650px
+        display: flex
+        justify-content: center
+        align-items: center
+    .headline
+        margin-top: 13%
+        margin-bottom: 2%
+        display: flex
+        justify-content: center
+        font-size: 30px
+        text-align: center
+        animation-duration: 1.8s
+        animation-delay: 0.7s 
+        user-select: none
+        p
+            color: #2376f1
+            font-family: 'Saira', sans-serif
+    .refresh-container
+        width: 75%
+        display: flex
+        justify-content: end
+        margin-bottom: 1%
+        .refresh-buttons
+            margin-right: -4.2%
+            width: 15%
+            display: flex
+            justify-content: center
+            align-items: center
+            .button-re
+                display: flex
+                justify-content: center
+                align-items: center
+                border: 1px #a1a1a13d solid
+                width: 50%
+                height: 50px
+                margin-right: 5%
+                cursor: pointer
+                border-radius: 5px
+                transition: 0.5s
+            .button-re:hover
+                background-color: #226ddd
+            .button-re:nth-child(1)
+                color: #2376f1
+            .button-re:nth-child(1):hover
+                color: white
+
+
+            .button-re-auto
+                display: flex
+                flex-flow: row
+                justify-content: center
+                align-items: center
+                border: 1px #a1a1a13d solid
+                border-radius: 5px
+                width: 100%
+                height: 50px
+                user-select: none
+                p
+                    margin-top: -2px
+                    margin-left: 7px
+                    margin-right: 2px
+                    font-family: 'Inter', sans-serif
+
+    .search-field
+        box-shadow: 0px 6px 6px -6px #2375f1b0
+        margin-top: 20px
+        width: 70%
+        animation-delay: 0.5s
+        animation-duration: 2s
+    .nft-header-container
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        width: 85%
+        height: 80px
+        animation-delay: 2s
+        .nft-header
+            background-color: #ffffff
+            font-size: 18px
+            border-radius: 15px 15px 0px 0px
+            border: 1px #a1a1a13d solid
+            border-bottom: 0
+            user-select: none
+            align-self: center
+            text-align: center
+            width: 15.5%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            p
+                margin-top: -30px
+
+        .trending
+            background-image: url("../public/fire5.gif")
+            background-size: 20% 120%
+            background-repeat: no-repeat
+            background-position: 95% 55%
+            animation: hue linear infinite
+            animation-duration: 1s
+            @keyframes hue 
+                from
+                    filter: hue-rotate(0deg)
+                50%
+                    filter: hue-rotate(360deg)
+                to
+                    filter: hue-rotate(0deg)
+    .nft-container
+        margin-top: -70px
+        width: 85%
+        height: 500px
+        display: flex
+        justify-content: space-evenly
+        align-content: center
+        .nft
+            align-self: center
+            width: 15.5%
+            height: 85%
+            box-shadow: 0px 8px 6px -6px #2376f1
+            border-bottom: 1px #a1a1a13d solid
+            border-left: 1px #a1a1a13d solid
+            border-right: 1px #a1a1a13d solid
+            border-radius: 15px
+            display: flex
+            flex-flow: column
+            font-family: 'Oxygen', sans-serif
+
+                    
+            .nft-image
+                align-self: center
+                width: 100%
+                height: 100%
+                border-radius: 15px 15px 0px 0px
+                overflow: hidden
+                user-select: none
+                animation: hover ease-in-out infinite
+                animation-duration: 3s
+                transition: 0.15s linear
+                @keyframes hover
+                    from
+                        transfrom: translateY(0%)
+                    50%
+                        transform: translateY(1.5%)
+                    to
+                        transfrom: translateY(0%)
+                img
+                    pointer-events: none
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: 0.7s
+            .nft-image:hover
+                border-radius: 15px
+                height: 120% 
+                width: 105%
+        .nft-collection
+            border-top: 1px solid #a1a1a13d
+            text-align: left
+            font-size: 14px
+            font-family: 'Inter', sans-serif
+            padding-left: 6%
+            padding-top: 6%
+            margin-bottom: -2%
+            a
+                color: #1976d2f3
+        .nft-info
+            align-self: center
+            width: 90%
+            height: 20%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            p
+            .nft-name
+                font-size: 16px
+                width: 80%
+            .nft-price
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                p
+                    font-family: 'Inter', sans-serif
+                    font-size: 16px
+                .etherIcon
+                    margin-right: 13%
+                    width: 22%
+                    height: 22%
+                .solanaIcon
+                    margin-right: 13%
+                    width: 33%
+                    height: 33%
+    .openSeaButton
+        align-self: center
+        width: 40%
+        margin-bottom: 10px
+        font-family: 'Oxygen', sans-serif
+        a
+            color: white
+
+    

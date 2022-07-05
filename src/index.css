@@ -1,13 +1,107 @@
-body {
+* {
+  scroll-behavior: smooth;
+  outline: none;
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/public/bgimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.main {
+  width: 400px;
+  position: absolute;
+  box-shadow: 0px 0px 20px 5px #2376f1;
+  border-radius: 50px;
+  border: 5px solid rgba(35, 183, 241, 0.8549019608);
+  background-color: #fff;
+  -webkit-animation: glow 3s infinite linear;
+          animation: glow 3s infinite linear;
+  transition: height 1s, width 1s;
+  overflow: hidden;
+}
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0px 0px 10px 5px #2376f1;
+    border: 5px solid rgba(35, 183, 241, 0.8549019608);
+  }
+  50% {
+    box-shadow: 0px 0px 50px 2px #2364f1;
+    border: 5px solid rgba(165, 86, 255, 0.368627451);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 5px #2376f1;
+    border: 5px solid rgba(35, 183, 241, 0.8549019608);
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 10px 5px #2376f1;
+    border: 5px solid rgba(35, 183, 241, 0.8549019608);
+  }
+  50% {
+    box-shadow: 0px 0px 50px 2px #2364f1;
+    border: 5px solid rgba(165, 86, 255, 0.368627451);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 5px #2376f1;
+    border: 5px solid rgba(35, 183, 241, 0.8549019608);
+  }
+}
+.main .logo-container {
+  margin-top: 30px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .logo-container .logo {
+  height: 120px;
+  background-image: url("/public/preloading-icon4.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.main .head {
+  z-index: 1;
+  margin-top: 20px;
+  visiblity: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .head Button {
+  margin-left: 10px;
+  height: 55px;
+  width: 95px;
+}
+
+.portal-container {
+  width: 50%;
+  height: 100vh;
+  background-color: #04020c;
+}
+.portal-container .portal {
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/portal.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 45px 55px #04020c;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,21 @@
+.text-time {
+  margin-top: -25px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.text-time .text-time-bg {
+  height: 25px;
+  z-index: 10;
+  width: 20%;
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
+}
+.text-time p {
+  margin-top: 1%;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #646464;
+}/*# sourceMappingURL=clock.css.map */
