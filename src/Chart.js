@@ -220,7 +220,7 @@ class Chart extends React.Component {
         componentDidMount(){
             this.fetchAPI()
 
-            setTimeout(() => this.setTimeframe(), 3000)
+            setTimeout(() => this.setTimeframe(), 4000)
         }
 
         mouseDownHandler(e){
@@ -548,8 +548,8 @@ class Chart extends React.Component {
 
                 this.setTitleSubtitle() //series & subtitle for pair
 
-                setTimeout(() => this.fetchAPI(), 10)
-                setTimeout(() => this.setTimeframe(), 3000)
+                setTimeout(() => this.fetchAPI(), 50)
+                setTimeout(() => this.setTimeframe(), 3500)
                 
             }
 
@@ -623,8 +623,8 @@ class Chart extends React.Component {
            
             this.setTitleSubtitle() //series & subtitle for pair
             
-            setTimeout(() => this.fetchAPI(), 10)
-            setTimeout(() => this.setTimeframe(), 3000)
+            setTimeout(() => this.fetchAPI(), 50)
+            setTimeout(() => this.setTimeframe(), 3500)
         }
 
         setTitleSubtitle(){
