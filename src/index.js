@@ -10,7 +10,7 @@ import TextField from '@mui/material/TextField';
 import Clock from './Clock';
 import Nickname from './Nickname';
 import PreloadingIcon from './preloadingIcon';
-import DashboardContainer from './dashboardContainer';
+import Dashboard from './dashboardContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
