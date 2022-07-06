@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Crypto_dashboard/static/css/main.f4a4274a.css",
-    "main.js": "/Crypto_dashboard/static/js/main.8b254cda.js",
+    "main.js": "/Crypto_dashboard/static/js/main.ae8c8ffb.js",
     "static/js/787.8b5a0f9c.chunk.js": "/Crypto_dashboard/static/js/787.8b5a0f9c.chunk.js",
     "static/media/preloading-icon4.gif": "/Crypto_dashboard/static/media/preloading-icon4.d517cdac412be7864b97.gif",
     "static/media/bgimg.jpg": "/Crypto_dashboard/static/media/bgimg.c334680ae50750aac389.jpg",
@@ -10,11 +10,11 @@
     "static/media/ether.png": "/Crypto_dashboard/static/media/ether.3079132e08e33ff13b17.png",
     "index.html": "/Crypto_dashboard/index.html",
     "main.f4a4274a.css.map": "/Crypto_dashboard/static/css/main.f4a4274a.css.map",
-    "main.8b254cda.js.map": "/Crypto_dashboard/static/js/main.8b254cda.js.map",
+    "main.ae8c8ffb.js.map": "/Crypto_dashboard/static/js/main.ae8c8ffb.js.map",
     "787.8b5a0f9c.chunk.js.map": "/Crypto_dashboard/static/js/787.8b5a0f9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4a4274a.css",
-    "static/js/main.8b254cda.js"
+    "static/js/main.ae8c8ffb.js"
   ]
 }
