@@ -46,7 +46,7 @@ let y = 0
 let isNull = true
 
 
-class DashboardContainer extends React.Component {
+class Dashboard extends React.Component {
     constructor(){
         super();
         this.state = {
@@ -185,7 +185,7 @@ class DashboardContainer extends React.Component {
             this.fetchData()
             console.log(">> Refreshing..")
             this.setState({intervalSearch: true})
-            this.interval2ID = setInterval(this.intervalSearch, 1)
+            this.interval2ID = setInterval(this.intervalSearch, 30)
 
         }
     }
@@ -420,4 +420,4 @@ class DashboardContainer extends React.Component {
     }
 }
 
-export default DashboardContainer
+export default Dashboard

@@ -116,7 +116,7 @@ class App extends React.Component {
           <TextField id="outlined-search" onChange={this.handleInput} label="Wpisz swoją nazwę.." color="primary" type="search"/>
           <Button onClick={this.logIn} variant="contained" color="primary">Przejdź</Button>
         </div>
-        <DashboardContainer openedApp={this.state.openedApp} height={this.state.height} name={this.state.name}/>
+        <Dashboard openedApp={this.state.openedApp} height={this.state.height} name={this.state.name}/>
         
         {/* <Clock visibility={this.state.visibility} timeHeight={this.state.timeHeight}/> */}
 
