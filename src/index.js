@@ -10,7 +10,7 @@ import TextField from '@mui/material/TextField';
 import Clock from './Clock';
 import Nickname from './Nickname';
 import PreloadingIcon from './preloadingIcon';
-import Dashboard from './dashboardContainer';
+import DashboardContainer from './dashboardContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -116,7 +116,7 @@ class App extends React.Component {
           <TextField id="outlined-search" onChange={this.handleInput} label="Wpisz swoją nazwę.." color="primary" type="search"/>
           <Button onClick={this.logIn} variant="contained" color="primary">Przejdź</Button>
         </div>
-        <Dashboard openedApp={this.state.openedApp} height={this.state.height} name={this.state.name}/>
+        <DashboardContainer openedApp={this.state.openedApp} height={this.state.height} name={this.state.name}/>
         
         {/* <Clock visibility={this.state.visibility} timeHeight={this.state.timeHeight}/> */}
 

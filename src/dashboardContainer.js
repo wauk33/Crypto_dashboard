@@ -105,7 +105,7 @@ class Dashboard extends React.Component {
                     })
 
                     clearInterval(this.interval2ID)
-                    this.setState({intervalSearch: false})
+                    this.setState({intervalSearch: false}) 
 
                     isNull = false
                     console.log("Przypisano odpowiedź do stanu.")
@@ -303,8 +303,8 @@ class Dashboard extends React.Component {
 
                 <div className="nft-container animate__animated animate__fadeIn animate__delay-1s">  
                 <div className="nft">       
-                    <div className="nft-image"><img src="./nft1.png"></img></div> 
-                    <div className="nft-collection"><p><a href="https://opensea.io/collection/bluesnft">Blues NFT</a></p></div>
+                    <div className="nft-image"><img src="./public/nft1.png"></img></div> 
+                    <div className="nft-collection"><p><a href="https://opensea.io/collection/bluesnft" target="_blank" >Blues NFT</a></p></div>
                     <div className="nft-info">
                         <div className="nft-name"><p>Blues</p>
                         <div className="nft-id">
@@ -317,15 +317,15 @@ class Dashboard extends React.Component {
                             </Tooltip>
                             <p> 0.3</p></div>
                     </div>
-                    <Button className="openSeaButton" variant="contained">OpenSea</Button>
+                    <Button className="openSeaButton" variant="contained"><a href="https://opensea.io/assets/ethereum/0x427ce6c9e2a504aeb22dc3839fbc4f4b6ebd75bb/159" target="_blank" >OpenSea</a></Button>
                 </div>
                 <div className="nft">
                     <div className="nft-image"><img src="./nft2.png"></img></div>
-                    <div className="nft-collection"><p><a href="https://opensea.io/collection/akumu-dragonz">Akumu Dragonz</a></p></div>
+                    <div className="nft-collection"><p><a href="https://opensea.io/collection/akumu-dragonz" target="_blank" >Akumu Dragonz</a></p></div>
                     <div className="nft-info">
                         <div className="nft-name"><p>Akumu</p>
                         <div className="nft-id">
-                            <p>#432</p>
+                            <p>#4323</p>
                         </div>
                         </div>
                         <div className="nft-price">
@@ -334,12 +334,12 @@ class Dashboard extends React.Component {
                             </Tooltip>
                             <p> 0.6</p></div>
                     </div>
-                    <Button className="openSeaButton" variant="contained">OpenSea</Button>
+                    <Button className="openSeaButton" variant="contained"><a href="https://opensea.io/assets/ethereum/0xc1ad47aeb274157e24a5f01b5857830aef962843/4323" target="_blank" >OpenSea</a></Button>
 
                 </div>
                 <div className="nft">
                     <div className="nft-image"><img src="./nft3.png"></img></div>
-                    <div className="nft-collection"><p><a href="https://opensea.io/collection/world-of-women-nft">World of Women</a></p></div>
+                    <div className="nft-collection"><p><a href="https://opensea.io/collection/world-of-women-nft" target="_blank" >World of Women</a></p></div>
                     <div className="nft-info">
                         <div className="nft-name">
                             <p>Woman</p>
@@ -354,12 +354,12 @@ class Dashboard extends React.Component {
                                 <p> 2.3</p></div>
                             
                     </div>
-                    <Button className="openSeaButton" variant="contained"><a href="https://opensea.io/assets/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/6776">OpenSea</a></Button>
+                    <Button className="openSeaButton" variant="contained"><a href="https://opensea.io/assets/ethereum/0xe785e82358879f061bc3dcac6f0444462d4b5330/6776" target="_blank" >OpenSea</a></Button>
 
                     </div>  
                 <div className="nft"> 
                     <div className="nft-image"><img src="./nft4.png"></img></div>
-                    <div className="nft-collection"><p><a href="https://opensea.io/collection/okay-bears">Okay Bears</a></p></div>
+                    <div className="nft-collection"><p><a href="https://opensea.io/collection/okay-bears" target="_blank" >Okay Bears</a></p></div>
                     <div className="nft-info"> 
                         <div className="nft-name"><p>Okay Bear</p>
                         <div className="nft-id"><p>#1839</p></div>
@@ -370,12 +370,12 @@ class Dashboard extends React.Component {
                             </Tooltip>
                             <p> 106</p></div>
                     </div>
-                    <Button className="openSeaButton" variant="contained">OpenSea</Button>
+                    <Button className="openSeaButton" variant="contained"><a href="https://opensea.io/assets/solana/DHVo187SfTRRiCBw7Fj37gWboEWRD5WQLnfE1jwP5bPc" target="_blank" >OpenSea</a></Button>
 
                 </div>
                 <div className="nft">       
                     <div className="nft-image"><img src="./land.png"></img></div> 
-                    <div className="nft-collection"><p><a href="https://opensea.io/collection/arcade-land">Arcade Land</a></p></div>
+                    <div className="nft-collection"><p><a href="https://opensea.io/collection/arcade-land" target="_blank" >Arcade Land</a></p></div>
                     <div className="nft-info">
                         <div className="nft-name"><p>Arcade Land Mega</p>
                         <div className="nft-id">
@@ -388,14 +388,14 @@ class Dashboard extends React.Component {
                             </Tooltip>
                             <p> 3.5</p></div>
                     </div>
-                    <Button className="openSeaButton" variant="contained">OpenSea</Button>
+                    <Button className="openSeaButton" variant="contained"><a href="https://opensea.io/assets/ethereum/0x4a8c9d751eeabc5521a68fb080dd7e72e46462af/6898" target="_blank" >OpenSea</a></Button>
                 </div>
                 <div className="nft">       
                     <div className="nft-image" >
                         <img src={this.state.assetImgUrl}>
                         </img>
                     </div> 
-                    <div className="nft-collection"><p><a href={this.state.assetCollectionUrl}>{this.state.assetCollectionName}</a></p></div>
+                    <div className="nft-collection"><p><a href={this.state.assetCollectionUrl} target="_blank" >{this.state.assetCollectionName}</a></p></div>
                     <div className="nft-info">
                         <div className="nft-name"><p>{this.state.assetName}</p>
                         <div className="nft-id">

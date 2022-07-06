@@ -58,6 +58,10 @@
 }
 .chart-container .panel .btn .btn-scale {
   color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .chart-container .panel .btn .btn-timeframe {
   padding: 5px;
@@ -83,4 +87,11 @@
 
 .highcharts-legend-title {
   font-size: 20px;
+}
+
+#pair, #exchange {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=chart.css.map */

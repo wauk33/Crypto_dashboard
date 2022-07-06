@@ -772,7 +772,7 @@ class Chart extends React.Component {
                             id="pair"
                             value= {this.state.pair}
                             label="Pair"
-                            style={item_group_style}
+                            style={item_group_style} 
                             onChange={this.choosePair}>
                     <ListSubheader style={category_group_style}>Bitcoin</ListSubheader>
                             <MenuItem value={'btcusd'} style={{display: this.state.marketPairs.btcusd, ...item_group_style}}>BTC/USD</MenuItem>
@@ -788,7 +788,7 @@ class Chart extends React.Component {
                             <MenuItem value={'dogeusd'} style={{display: this.state.marketPairs.dogeusd, ...item_group_style}}>DOGE/USD</MenuItem>
                             <MenuItem value={'dogeusdt'} style={{display: this.state.marketPairs.dogeusdt, ...item_group_style}}>DOGE/USDT</MenuItem>
                     </Select>
-                </FormControl>  
+                </FormControl>
  
                 <FormControl sx={{ m: 2, minWidth: 180, textAlign: 'center' }} variant="standard" size="small" color="primary"> 
                 <InputLabel id="exchange">Rynek</InputLabel> 
@@ -815,7 +815,7 @@ class Chart extends React.Component {
             <div className="panel">
 
             <div className="btn time">
-                    <Tooltip title="Przedział czasowy" placement="right" arrow >
+                    <Tooltip title="Przedział czasowy" placement="right" arrow > 
                         <Fab color="primary" size="medium" onClick={this.setTimeframe}>
                             <p className="btn-timeframe">1D</p>
                         </Fab>
