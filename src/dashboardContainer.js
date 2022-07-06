@@ -303,7 +303,7 @@ class Dashboard extends React.Component {
 
                 <div className="nft-container animate__animated animate__fadeIn animate__delay-1s">  
                 <div className="nft">       
-                    <div className="nft-image"><img src="./public/nft1.png"></img></div> 
+                    <div className="nft-image"><img src="./nft1.png"></img></div> 
                     <div className="nft-collection"><p><a href="https://opensea.io/collection/bluesnft" target="_blank" >Blues NFT</a></p></div>
                     <div className="nft-info">
                         <div className="nft-name"><p>Blues</p>
